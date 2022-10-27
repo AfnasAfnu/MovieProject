@@ -1,0 +1,5 @@
+<form method="POST" enctype="multipart/form-data" >
+	{% csrf_token %}
+	{{form.as_p}}   # we donot want create any seperate form like add so form calling
+	<input type="submit">
+</form>
